@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "809566666095",
+    "firebase_url": "https://meuteste-58088.firebaseio.com",
+    "project_id": "meuteste-58088",
+    "storage_bucket": "meuteste-58088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809566666095:android:6df538cc68105767",
+        "android_client_info": {
+          "package_name": "com.repassi.meuteste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809566666095-2abgqbrc3u057idsc296420mmtvgk15b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.repassi.meuteste",
+            "certificate_hash": "9085f9cf4997863aac4b9355ba8ab0a17ef6df9b"
+          }
+        },
+        {
+          "client_id": "809566666095-tcaicg521575hcavset8inkcf1jvhl2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuQsAHb-M1-QYZ1yCVT4YUILJbl-nX834"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809566666095-tcaicg521575hcavset8inkcf1jvhl2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
