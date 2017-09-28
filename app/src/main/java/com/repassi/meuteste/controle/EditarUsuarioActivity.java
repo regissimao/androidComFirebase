@@ -14,8 +14,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.repassi.meuteste.R;
 import com.repassi.meuteste.modelo.Usuario;
+import com.repassi.meuteste.modelo.Util;
 
 public class EditarUsuarioActivity extends AppCompatActivity {
 
@@ -73,6 +76,14 @@ public class EditarUsuarioActivity extends AppCompatActivity {
     }
 
     public void updateUI(FirebaseUser user) {
+
+        FirebaseDatabase myRefdatabase = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = myRefdatabase.getReference("usuarios");
+
+        Util.idUser = user.getUid();
+
+        myRef.child(user.getUid()).setValue(usuario);
+
         Intent intent = new Intent(this, PrincipalActivity.class);
         intent.putExtra("usuario", usuario);
         startActivity(intent);

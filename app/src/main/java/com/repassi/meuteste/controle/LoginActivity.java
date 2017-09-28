@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.repassi.meuteste.R;
 import com.repassi.meuteste.modelo.Usuario;
+import com.repassi.meuteste.modelo.Util;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -94,6 +95,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     public void updateUI(FirebaseUser user) {
+
+        //FirebaseDatabase myRefdatabase = FirebaseDatabase.getInstance();
+        //DatabaseReference myRef = myRefdatabase.getReference("usuario");
+        //String id = user.getUid();
+        //Query query = myRef.equalTo(id);
+        //Usuario usuario = query.
+
+        Util.idUser = user.getUid();
+
         Intent intent = new Intent(this, PrincipalActivity.class);
         intent.putExtra("usuario", usuario);
         startActivity(intent);

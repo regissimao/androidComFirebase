@@ -23,6 +23,29 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/txtPrincipalNome"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrincipalEmail"
+        android:id="@+id/btnCadastrarCurso"
+        android:text="Cadastrar Curso"
+        android:onClick="cadastrarCurso"/>
+
+    <EditText
+        android:id="@+id/edtNomeCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCadastrarCurso"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNomeCurso"
+        android:id="@+id/btnListarCurso"
+        android:text="Listar Curso"
+        android:onClick="listarCurso"/>
+
 
 </RelativeLayout>
 
